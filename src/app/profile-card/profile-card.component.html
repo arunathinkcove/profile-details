@@ -1,0 +1,22 @@
+<div class="container">
+  <h2 class="flex items-center text-5xl font-extrabold dark:text-white">Team ThinkCove</h2>
+  <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400 my-4">A developer is someone who develops
+    something such as an idea, a design, or a product.
+  </p>
+  <div class="grid grid-cols-1 gap-4 md:grid-cols-4">
+    <div class="flex flex-wrap justify-center gap-20 my-4"*ngFor="let profile of profiles">
+      <figure>
+      <a [routerLink]="profile.route">
+        <img class="w-36 h-36 rounded-full w-1/4 p-2 "  width="384"
+        height="512" (click)="showDetails = !showDetails" [src]="profile.img" alt="Profile image cap">
+        </a>
+        <div class="font-medium dark:text-white">
+          <div>{{ profile.name }}</div>
+          <div class="text-sm text-gray-500 dark:text-gray-400">{{ profile.descriptiion }}</div>
+        </div>
+        </figure>
+      
+    </div>
+    
+  </div>
+</div>

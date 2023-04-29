@@ -1,0 +1,20 @@
+<div class="flex flex-col md:flex-row items-center md:items-start">
+  <img class="w-36 h-36 rounded-full w-1/4 p-2 " src="../../assets/anas.jpg" alt="Rounded avatar" width="384"
+    height="512" (click)="showDetails = !showDetails">
+  
+  <div class="pt-6 md:p-8 text-center md:text-left space-y-4 md:pl-4 flex-1" *ngIf="showDetails">
+    <blockquote>
+      <p class="text-lg font-medium">
+        ManualTesting
+      </p>
+    </blockquote>
+    <figcaption class="font-medium">
+      <div class="text-sky-500 dark:text-sky-400">
+      Mohamed Anas
+      </div>
+      <div class="text-slate-700 dark:text-slate-500">
+        QA Software Tester, ThinkCove Technologies Pvt.Ltd.Chennai
+      </div>
+    </figcaption>
+  </div>
+</div>
